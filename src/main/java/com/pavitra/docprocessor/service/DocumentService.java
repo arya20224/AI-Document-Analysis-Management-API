@@ -27,10 +27,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class DocumentService {
 
-    // Constructor injection via Lombok's @RequiredArgsConstructor - same
-    // pattern as BookingService in the Parking project. Beats field
-    // @Autowired because dependencies are explicit and the class can be
-    // unit-tested with mocks instead of needing a full Spring context.
+    
     private final DocumentRepository documentRepository;
     private final RestTemplate restTemplate;
     private final ObjectMapper objectMapper;
